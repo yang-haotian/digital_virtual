@@ -1,0 +1,12 @@
+.idea
+checkpoints
+data
+outputs
+results
+venv
+*.pyc
+animate_master.egg-info
+*.png
+*.jpg
+*.mp4
+*.pth

@@ -1,0 +1,46 @@
+checkpointing_steps: 1000
+data:
+  sample_margin: 30
+  train_bs: 1
+  train_height: 1024
+  train_width: 576
+denoising_unet_path: ./checkpoints/MusePose/denoising_unet.pth
+enable_zero_snr: true
+exp_name: MusePose_stage1
+motion_module_path: ./checkpoints/MusePose/motion_module.pth
+noise_offset: 0.05
+noise_scheduler_kwargs:
+  beta_end: 0.012
+  beta_schedule: scaled_linear
+  beta_start: 0.00085
+  clip_sample: false
+  num_train_timesteps: 1000
+  steps_offset: 1
+output_dir: ./outputs
+pose_guider_path: ./checkpoints/MusePose/pose_guider.pth
+pose_guider_pretrain: true
+pretrained_base_model_path: ./checkpoints/sd-image-variations-diffusers
+pretrained_vae_path: ./checkpoints/sd-vae-ft-mse
+reference_unet_path: ./checkpoints/MusePose/reference_unet.pth
+seed: 1234
+snr_gamma: 5.0
+solver:
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-08
+  adam_weight_decay: 0.01
+  enable_xformers_memory_efficient_attention: true
+  gradient_accumulation_steps: 1
+  gradient_checkpointing: false
+  learning_rate: 1.0e-05
+  lr_scheduler: constant
+  lr_warmup_steps: 1
+  max_grad_norm: 1.0
+  max_train_steps: 30000
+  mixed_precision: fp16
+  scale_lr: false
+  use_8bit_adam: false
+uncond_ratio: 0.1
+val:
+  validation_steps: 500
+weight_dtype: fp16

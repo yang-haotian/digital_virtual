@@ -1,0 +1,15 @@
+artifact_uri: file:///scratch/backup/ws_projects/AnimateMaster/mlruns/260034146896880638/bfac0bc8f24e4968bfbfe5ef0f812695/artifacts
+end_time: 1730562310507
+entry_point_name: ''
+experiment_id: '260034146896880638'
+lifecycle_stage: active
+run_id: bfac0bc8f24e4968bfbfe5ef0f812695
+run_name: 20241102-1544
+run_uuid: bfac0bc8f24e4968bfbfe5ef0f812695
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1730562296671
+status: 3
+tags: []
+user_id: root
